@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "estate_title": "Cozy Family Home",
+    "type": "Single-family Home",
+    "description": "A charming family home with modern amenities and a spacious backyard.",
+    "price": "$350,000",
+    "status": "sale",
+    "area": "2000 sqft",
+    "location": "123 Main Street, Anytown, USA",
+    "facilities": ["living room", "swimming pool", "kitchen"],
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
+    "view_property_button": "View Property"
+  },
+  {
+    "id": 2,
+    "estate_title": "Modern Townhouse",
+    "type": "Townhouse",
+    "description": "A stylish and contemporary townhouse in a prime location, perfect for urban living.",
+    "price": "$450,000",
+    "status": "sale",
+    "area": "1800 sqft",
+    "location": "456 Town Square, Metropolis, USA",
+    "facilities": ["living room", "garage", "community pool"],
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
+    "view_property_button": "View Property"
+  },
+  {
+    "id": 3,
+    "estate_title": "Luxury Apartment",
+    "type": "Apartment",
+    "description": "Experience luxury living in this spacious apartment with stunning city views.",
+    "price": "$3,000/month",
+    "status": "rent",
+    "area": "1500 sqft",
+    "location": "789 Urban Avenue, Cityscape, USA",
+    "facilities": ["living room", "balcony", "fitness center"],
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
+    "view_property_button": "View Property"
+  },
+  {
+    "id": 4,
+    "estate_title": "Student Dormitory",
+    "type": "Student Housing",
+    "description": "Convenient and comfortable student dormitory near campus, with shared facilities.",
+    "price": "$800/month",
+    "status": "rent",
+    "area": "400 sqft",
+    "location": "123 College Avenue, Campusville, USA",
+    "facilities": ["bedroom", "study area", "shared kitchen"],
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
+    "view_property_button": "View Property"
+  },
+  {
+    "id": 5,
+    "estate_title": "Retirement Villa",
+    "type": "Senior Living Community",
+    "description": "A peaceful and supportive retirement villa for seniors, offering comfort and care.",
+    "price": "$2,500/month",
+    "status": "rent",
+    "area": "1200 sqft",
+    "location": "456 Elderly Drive, Serenity Village, USA",
+    "facilities": ["private room", "communal dining", "medical care"],
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
+    "view_property_button": "View Property"
+  },
+  {
+    "id": 6,
+    "estate_title": "Beachfront Villa",
+    "type": "Vacation Rental",
+    "description": "Escape to paradise in this luxurious beachfront villa, perfect for a relaxing vacation.",
+    "price": "$500/night",
+    "status": "rent",
+    "area": "2500 sqft",
+    "location": "123 Beachfront Avenue, Paradise Island, USA",
+    "facilities": ["ocean view", "private pool", "beach access"],
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
+    "view_property_button": "View Property"
+  },
+  {
+    "id": 7,
+    "estate_title": "Mountain Chalet",
+    "type": "Vacation Rental",
+    "description": "Experience the beauty of the mountains in this cozy chalet, perfect for a winter getaway.",
+    "price": "$400/night",
+    "status": "rent",
+    "area": "1800 sqft",
+    "location": "789 Mountain View Road, Alpine Town, USA",
+    "facilities": [
+      "fireplace",
+      "mountain view balcony",
+      "ski-in/ski-out access"
+    ],
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
+    "view_property_button": "View Property"
+  },
+  {
+    "id": 8,
+    "estate_title": "City Loft",
+    "type": "Apartment",
+    "description": "Live in style with this chic city loft, boasting modern design and urban convenience.",
+    "price": "$2,200/month",
+    "status": "rent",
+    "area": "1000 sqft",
+    "location": "456 Urban Street, Metroville, USA",
+    "facilities": ["open floor plan", "city view", "rooftop terrace"],
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
+    "view_property_button": "View Property"
+  },
+  {
+    "id": 9,
+    "estate_title": "Lakefront Cabin",
+    "type": "Vacation Rental",
+    "description": "Relax by the lake in this charming cabin, offering tranquility and breathtaking views.",
+    "price": "$300/night",
+    "status": "rent",
+    "area": "1200 sqft",
+    "location": "123 Lakeview Drive, Serene Lakeside, USA",
+    "facilities": ["lake view", "deck", "private dock"],
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
+    "view_property_button": "View Property"
+  }
+]

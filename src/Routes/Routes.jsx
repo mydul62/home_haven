@@ -6,6 +6,8 @@ import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
+import Details from "../pages/DetailsPage/Details";
+import PrivateRouter from "./PrivateRouter";
 
 export const router = createBrowserRouter([
   {
@@ -14,7 +16,8 @@ export const router = createBrowserRouter([
     children:[
       {
         path:"/",
-        element:<Home/>
+        element:<Home/>,
+        loader:()=>fetch('/Data.json')
       },
       {
         path:"/login",
@@ -26,7 +29,12 @@ export const router = createBrowserRouter([
       },
       {
         path:"updateprofile",
-        element:<UpdateProfile/>
+        element:<PrivateRouter><UpdateProfile/></PrivateRouter> 
+      },
+      {
+        path:"/details/:id",
+        element:<PrivateRouter><Details></Details></PrivateRouter> ,
+        loader:()=>fetch('/Data.json')
       }
     ]
   },

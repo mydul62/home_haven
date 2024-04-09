@@ -22,7 +22,7 @@
     "area": "1800 sqft",
     "location": "456 Town Square, Metropolis, USA",
     "facilities": ["living room", "garage", "community pool"],
-    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
+    "image": "https://media.istockphoto.com/id/1560745231/photo/modern-apartment-house-in-the-evening.jpg?s=612x612&w=0&k=20&c=4iPtK8EyR0xB9T9j8S43Wit5eZR0otqDfPnpBwBQaNM=",
     "view_property_button": "View Property"
   },
   {
@@ -35,7 +35,7 @@
     "area": "1500 sqft",
     "location": "789 Urban Avenue, Cityscape, USA",
     "facilities": ["living room", "balcony", "fitness center"],
-    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
+    "image": "https://cdn.pixabay.com/photo/2023/12/30/07/31/living-room-8477521_1280.jpg",
     "view_property_button": "View Property"
   },
   {
@@ -48,7 +48,7 @@
     "area": "400 sqft",
     "location": "123 College Avenue, Campusville, USA",
     "facilities": ["bedroom", "study area", "shared kitchen"],
-    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
+    "image": "https://cdn.pixabay.com/photo/2018/11/12/11/29/room-3810680_640.jpg",
     "view_property_button": "View Property"
   },
   {
@@ -61,7 +61,7 @@
     "area": "1200 sqft",
     "location": "456 Elderly Drive, Serenity Village, USA",
     "facilities": ["private room", "communal dining", "medical care"],
-    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
+    "image": "https://images.pexels.com/photos/4940760/pexels-photo-4940760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "view_property_button": "View Property"
   },
   {
@@ -74,7 +74,7 @@
     "area": "2500 sqft",
     "location": "123 Beachfront Avenue, Paradise Island, USA",
     "facilities": ["ocean view", "private pool", "beach access"],
-    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
+    "image":"https://images.pexels.com/photos/5746256/pexels-photo-5746256.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", 
     "view_property_button": "View Property"
   },
   {

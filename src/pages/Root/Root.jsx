@@ -1,14 +1,14 @@
 import {Outlet} from "react-router-dom";
 import Navbar from "../../Components/NavBar/Navbar";
+import TopNav from "../../Components/NavBar/TopNav";
 const Root = () => {
   return (
     <div>
-     <div>
+     <div className=" ">
+      <TopNav></TopNav>
      <Navbar/>
      </div>
-      <div>
       <Outlet></Outlet>
-      </div>
     </div>
   );
 };

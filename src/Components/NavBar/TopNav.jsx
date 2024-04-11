@@ -4,7 +4,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 const TopNav = () => {
   return (
-    <div className="bg-[#2f3640] text-white py-3">
+    <div className="bg-[#2f3640] text-white py-3 md:block hidden">
       <div className=" flex justify-between max-w-[1440px] w-[90%] mx-auto ">
       <div className=" w-40%">
         <h3> <Marquee>Best eid offer || Discout in All 20% || Eid Mobarok</Marquee> </h3>

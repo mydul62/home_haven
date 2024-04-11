@@ -1,21 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams, useLoaderData } from 'react-router-dom';
+import Detail from './Detail';
 
 const Details = () => {
   const [loadedData, setLoadedData] = useState([]);
   const datas = useLoaderData();
-  const { loadId } = useParams();
-  const {id}=loadedData;
+  const { id } = useParams();
   useEffect(() => {
-    const newData = datas.filter(data => data.id === parseInt(loadId));
+    const newData = datas.filter(data => data.id === parseInt(id));
     setLoadedData(newData);
-  }, [datas, loadId]);
+  }, [datas, id]);
 
-  console.log(loadedData);
+console.log(loadedData);
+ 
 
   return (
     <div>
-      <h1>id is here {id}</h1>
+      {
+        loadedData.map(dt=>(
+           <Detail data={dt} key={dt.id}></Detail>
+        ))
+      }
     </div>
   );
 };

@@ -1,9 +1,108 @@
-
+import { useContext } from "react";
+import { AuthContext } from "../../Firebase/FirebaseProvider";
+import { useForm } from "react-hook-form"
 
 const UpdateProfile = () => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm()
+  const { user,updateprofile ,signUpPass} = useContext(AuthContext);
+console.log(user);
+  const onSubmit = (data) =>{
+    const name = data.name;
+    const phone= data.phone;
+    const PhotoURL= data.PhotoURL;
+    updateprofile(name, phone,PhotoURL)
+    .then(() => {
+      signUpPass()
+      // Profile updated!
+      // ...
+    }).catch((error) => {
+      // An error occurred
+      // ...
+    });
+  }
   return (
-    <div>
-      update profile
+    <div className="max-w-[1440px] w-[90%] gap-6 mx-auto grid grid-cols-1 md:grid-cols-5 my-24">
+      <div className=" col-span-full md:col-span-2 border-b-2 md:border-b-0 md:border-r-2 border-dashed min-h-24 p-6">
+        <div className=" w-full p-6 border-2 rounded-2xl ">
+          <div className=" border-b ">
+            <div className=" w-[200px] mx-auto rounded-full border-8">
+              <img
+                className=" rounded-full"
+                src={user && user.photoURL}
+                alt=""
+              />
+            </div>
+            <h2 className=" text-center font-poppins text-xl font-semibold py-2">
+              {user.displayName}
+            </h2>
+          </div>
+          <div className=" flex justify-center py-6 ">
+            <div className=" inline-block border-b-4 border-[#27ae60] pb-2">
+              <h2 className=" text-center text-xl font-poppins font-semibold">
+                Personal Information
+              </h2>
+            </div>
+          </div>
+          <div className=" space-y-4 *:font-poppins *:text-[#606e8c]">
+            <h3 className="">Name : {user && user.displayName}</h3>
+            <h3>
+              Phone : {user.phoneNumber ? user.phoneNumber : "01*********"}
+            </h3>
+            <h3>Email : {user && user.email}</h3>
+          </div>
+        </div>
+      </div>
+      <div className=" col-span-full md:col-span-3 ">
+        <div className="  px-6">
+          <div className=" text-center py-6">
+            <h2 className=" text-3xl">Update Profile</h2>
+          </div>
+          <form onSubmit={handleSubmit(onSubmit)} className=" space-y-8">
+            <label className="input input-bordered flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                className="w-4 h-4 opacity-70"
+              >
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
+              </svg>
+              <input  {...register("name")} type="text" className="grow" placeholder="Username" />
+            </label>
+            <label className="input input-bordered flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                className="w-4 h-4 opacity-70"
+              >
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
+              </svg>
+              <input {...register("phone")} type="text" className="grow" placeholder="Phone" />
+            </label>
+            <label className="input input-bordered flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                className="w-4 h-4 opacity-70"
+              >
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
+              </svg>
+              <input {...register("PhotoURL")} type="text" className="grow" placeholder="PhotoURL" />
+            </label>
+
+            <div className="flex justify-center">
+            <input className=" btn bg-[#27ae60] text-white" type="submit" value="Update Now" />
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };

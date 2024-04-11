@@ -4,10 +4,11 @@ import { useForm } from "react-hook-form"
 import { AuthContext } from "../../Firebase/FirebaseProvider";
 import { RxEyeOpen } from "react-icons/rx";
 import { GoEyeClosed } from "react-icons/go";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
   const [show, setShow] = useState(false);
-  const {signInPass}=useContext(AuthContext)
+  const {signInPass,googleSignIn}=useContext(AuthContext)
   const {
     register,
     handleSubmit,
@@ -18,6 +19,14 @@ const Login = () => {
     const email = data.email;
     const password = data.password;
     signInPass(email,password)
+    .then(result=>{
+       console.log(result);
+    }).catch(error=>{
+      console.log(error.message);
+    })
+  }
+  const handleGoogleLogin = () =>{
+    googleSignIn()
     .then(result=>{
        console.log(result);
     }).catch(error=>{
@@ -72,8 +81,7 @@ const Login = () => {
           </div>
           <div className="flex gap-3 flex-col items-center justify-center pt-6">
             <p className=" text-xl font-bold">or</p>
-          {/* <p className="mb-3" onClick={handleGoogleLogin}><FcGoogle size={30} /> */}
-{/* </p> */}
+          <p className="mb-3" onClick={handleGoogleLogin}><FcGoogle size={30} />  </p> 
             <input
               className="bg-[#2ed573] py-2 rounded-xl w-1/3 text-xl"
               type="submit"

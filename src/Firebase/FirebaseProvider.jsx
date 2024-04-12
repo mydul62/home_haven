@@ -28,17 +28,26 @@ const FirebaseProvider = ({ children }) => {
     setLoading(true);
     return signInWithPopup(auth, googleProvider);
   };
+
+  
   const updateprofile = (name, phone, PhotoURL) => {
-    console.log("Name:", name);
-    console.log("Phone:", phone);
-    console.log("PhotoURL:", PhotoURL);
-    
     return updateProfile(auth.currentUser, {
       displayName: name,
       phoneNumber: phone,
       photoURL: PhotoURL,
+    }).then(() => {
+      console.log(phone);
+      setUser((prevUser) => ({
+        ...prevUser,
+        displayName: name,
+        phoneNumber: phone,
+        photoURL: PhotoURL,
+      }));
+    }).catch((error) => {
+      console.error("Error updating profile:", error.message);
     });
   };
+  
   
 
   useEffect(() => {

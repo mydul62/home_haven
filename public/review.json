@@ -1,0 +1,34 @@
+[
+  {
+    "id": "001",
+    "author": "John Doe",
+    "date": "3 days ago",
+    "rating": 4.0,
+    "comment": "The spacious layout and modern amenities make this flat perfect for young professionals looking for a comfortable yet stylish living space.",
+    "image": "https://i.ibb.co/MhnWVbX/mydul-removebg-preview.png"
+  },
+  {
+    "id": "002",
+    "author": "Jane Smith",
+    "date": "1 week ago",
+    "rating": 5.0,
+    "comment": "I fell in love with the panoramic views from the balcony of this flat. It's like having a private retreat in the heart of the city!",
+    "image": "https://i.ibb.co/MhnWVbX/mydul-removebg-preview.png"
+  },
+  {
+    "id": "003",
+    "author": "Alice Johnson",
+    "date": "2 months ago",
+    "rating": 3.5,
+    "comment": "While the location of this flat is convenient, I found the lack of storage space to be a drawback. Overall, it's a decent option for those prioritizing location.",
+    "image": "https://i.ibb.co/MhnWVbX/mydul-removebg-preview.png"
+  },
+  {
+    "id": "004",
+    "author": "Bob Brown",
+    "date": "Yesterday",
+    "rating": 4.5,
+    "comment": "The modern design and attention to detail in this flat exceeded my expectations. It's a true gem in the competitive real estate market!",
+    "image": "https://i.ibb.co/MhnWVbX/mydul-removebg-preview.png"
+  }
+]

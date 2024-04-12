@@ -62,14 +62,14 @@ const Navbar = () => {
               <img alt="user" src={`${user ? user.photoURL : user}`} />
               </div>
             </div>
-            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <ul tabIndex={0}  className="menu border-[#aeaeae] bg-[#eaeaeadd] space-y-4 my-8 menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
               <li>
                 <a className="justify-between">
                   {user.email}
                 </a>
               </li>
               <li><Link to={"/updateprofile"}>Update Profile</Link></li>
-              <li className=" cursor-pointer" onClick={handleSignOut}>Logout</li>
+              <li className="ml-4 cursor-pointer" onClick={handleSignOut}>Logout</li>
             </ul>
           </div>: <Link to={"/login"} className="btn text-2xl font-poppins font-semibold text-[#747474]">Login</Link>
           }

@@ -16,26 +16,30 @@ const Detail = ({ data }) => {
             <h2>{data.estate_title}</h2>
             </div>
             <div className=' flex justify-between border-b border-black pb-4'>
-            <h2>area</h2>
+            <h2>Area</h2>
             <h2>{data.area}</h2>
             </div>
             <div className=' flex justify-between border-b border-black pb-4'>
-            <h2>type</h2>
+            <h2>Type</h2>
             <h2>{data.type}</h2>
             </div>
             <div className=' flex justify-between border-b border-black pb-4'>
-            <h2>location</h2>
+            <h2>Location</h2>
             <h2>{data.location}</h2>
             </div>
             <div className=' flex justify-between border-b border-black pb-4'>
-            <h2>facilities</h2>
-            <h2 className='flex flex-col gap-2'>{
+            <h2>Facilities</h2>
+            <h2 className=''>
+              <ul>
+              {
             data.facilities.map((facilitie,index)=>(
-             <h3 key={index}>{facilitie}</h3>
-            ))}</h2>
+             <li className=' list-disc' key={index}>{facilitie}</li>
+            ))}
+              </ul>
+            </h2>
             </div>
-            <div className=' flex justify-between border-b border-black pb-4'>
-            <h2>price</h2>
+            <div className=' flex justify-between border-b'>
+            <h2>Price</h2>
             <h2>{data.price}</h2>
             </div>
           </div>

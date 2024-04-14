@@ -4,7 +4,7 @@ import { RiLogoutCircleLine } from 'react-icons/ri';
 import { FaUserCircle } from 'react-icons/fa';
 import { Transition } from '@headlessui/react';
 import { AuthContext } from '../Firebase/FirebaseProvider';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import TopNav from './NavBar/TopNav';
 
 const Navmenu = () => {
@@ -17,11 +17,11 @@ const Navmenu = () => {
  const avatar="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg";
   const navlist = (
     <>
-      <li className="hover:text-gray-300">
-        <Link to={"/"}>Home</Link>
+      <li className="hover:text-gray-300 text-xl ">
+        <NavLink to={"/"}>Home</NavLink>
       </li>
-      <li className="hover:text-gray-300">
-        <Link to={"/updateprofile"}>Update Profile</Link>
+      <li className="hover:text-gray-300 text-xl">
+        <NavLink to={"/updateprofile"}>Update Profile</NavLink>
       </li>
     </>
   );
@@ -32,13 +32,13 @@ const Navmenu = () => {
 
   return (
    <>
-   <div className=' '>
+   <div className=' fixed top-0 w-full z-40'>
    <TopNav></TopNav>
    <div className='bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-4 px-6'>
      <nav className=" max-w-[1440px] mx-auto  ">
       <div className="flex justify-between  items-center">
         <div className="flex items-center">
-          <h1 className="text-2xl font-semibold flex gap-0">Home <span className=' text-[#27ae60]'>Haven</span> </h1>
+          <h1 className="text-2xl font-semibold flex gap-0">Home <span className=' text-orange-400'>Haven</span> </h1>
         </div>
         <div className=' flex items-center gap-3'>
         <div className="md:hidden">
@@ -80,11 +80,11 @@ const Navmenu = () => {
     </nav>
    </div>
    <div>
-  <ul className={`${showSidebar?"static":"absolute top-[-100px]"} flex flex-col justify-center items-center gap-4 py-6`}>
+   </div>
+   </div>
+   <ul className={`${showSidebar?"static":"absolute top-[-100px]"} flex flex-col justify-center items-center gap-4 py-6`}>
     {navlist}
   </ul>
-   </div>
-   </div>
    </>
   );
 };

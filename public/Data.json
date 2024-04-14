@@ -3,85 +3,139 @@
     "id": 1,
     "estate_title": "Cozy Family Home",
     "type": "Single-family Home",
-    "description": "A charming family home with modern amenities and a spacious backyard.",
+    "description": "Nestled in a tranquil neighborhood, this cozy family home offers the perfect blend of comfort and convenience. With a spacious backyard, it provides ample space for outdoor activities and family gatherings. Step inside to discover a warm and inviting interior featuring modern amenities and tasteful finishes. The open floor plan seamlessly connects the living room, kitchen, and dining area, creating an ideal space for family bonding and entertaining guests. Conveniently located near schools and parks, this home is the epitome of family-friendly living.",
     "price": "$350,000",
     "status": "sale",
     "area": "2000 sqft",
     "location": "123 Main Street, Anytown, USA",
     "facilities": ["living room", "swimming pool", "kitchen"],
     "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
-    "view_property_button": "View Property"
+    "comments": [
+      {
+        "user": "Jane Smith",
+        "comment": "Visited this property last weekend and fell in love with it! The backyard is perfect for family gatherings, and the interior layout is just what we've been looking for."
+      },
+      {
+        "user": "John Doe",
+        "comment": "Excellent neighborhood and close to schools. Would highly recommend for families looking to settle down."
+      }
+    ]
   },
   {
     "id": 2,
     "estate_title": "Modern Townhouse",
     "type": "Townhouse",
-    "description": "A stylish and contemporary townhouse in a prime location, perfect for urban living.",
+    "description": "Welcome to modern urban living at its finest! This stylish townhouse offers contemporary design and luxurious amenities in a prime location. Boasting sleek architectural details and high-end finishes, it exudes sophistication and elegance. The open-concept layout maximizes space and natural light, creating a welcoming atmosphere for residents and guests alike. With a private garage and community pool, residents can enjoy convenience and relaxation right at their doorstep. Conveniently situated near shops and restaurants, this townhouse is the epitome of upscale city living.",
     "price": "$450,000",
     "status": "sale",
     "area": "1800 sqft",
     "location": "456 Town Square, Metropolis, USA",
     "facilities": ["living room", "garage", "community pool"],
     "image": "https://media.istockphoto.com/id/1560745231/photo/modern-apartment-house-in-the-evening.jpg?s=612x612&w=0&k=20&c=4iPtK8EyR0xB9T9j8S43Wit5eZR0otqDfPnpBwBQaNM=",
-    "view_property_button": "View Property"
+    "comments": [
+      {
+        "user": "Emily Johnson",
+        "comment": "This townhouse has a great layout and is conveniently located near shops and restaurants. Love the modern design!"
+      },
+      {
+        "user": "Michael Brown",
+        "comment": "Visited during an open house event and was impressed by the quality of construction. Would consider buying."
+      }
+    ]
   },
   {
     "id": 3,
     "estate_title": "Luxury Apartment",
     "type": "Apartment",
-    "description": "Experience luxury living in this spacious apartment with stunning city views.",
+    "description": "Indulge in luxury living with this exquisite apartment offering breathtaking city views and top-of-the-line amenities. Located in the heart of the bustling cityscape, this apartment provides the perfect retreat from the urban hustle and bustle. Step inside to discover a spacious and elegantly appointed interior featuring high ceilings, hardwood floors, and floor-to-ceiling windows. The gourmet kitchen is a chef's dream, equipped with premium appliances and sleek cabinetry. Residents can unwind on the private balcony overlooking the city skyline or stay active in the state-of-the-art fitness center. With unparalleled luxury and convenience, this apartment sets the standard for upscale city living.",
     "price": "$3,000/month",
     "status": "rent",
     "area": "1500 sqft",
     "location": "789 Urban Avenue, Cityscape, USA",
     "facilities": ["living room", "balcony", "fitness center"],
     "image": "https://cdn.pixabay.com/photo/2023/12/30/07/31/living-room-8477521_1280.jpg",
-    "view_property_button": "View Property"
+    "comments": [
+      {
+        "user": "David Wilson",
+        "comment": "Had a chance to tour this apartment last week and was blown away by the views! The balcony is perfect for enjoying morning coffee."
+      },
+      {
+        "user": "Sarah Martinez",
+        "comment": "Although a bit pricey, this apartment is worth every penny for the luxury it offers. The fitness center is top-notch!"
+      }
+    ]
   },
   {
     "id": 4,
     "estate_title": "Student Dormitory",
     "type": "Student Housing",
-    "description": "Convenient and comfortable student dormitory near campus, with shared facilities.",
+    "description": "Experience hassle-free student living in this convenient and comfortable dormitory located near the university campus. Designed with students in mind, this dormitory offers a safe and supportive environment for academic success and personal growth. Each dorm room is furnished with essential amenities, including a bed, study area, and shared kitchen facilities. Residents can socialize and study together in the communal areas or unwind in the outdoor courtyard. With affordable rent and proximity to campus, this dormitory provides an ideal living solution for students seeking convenience and community.",
     "price": "$800/month",
     "status": "rent",
     "area": "400 sqft",
     "location": "123 College Avenue, Campusville, USA",
     "facilities": ["bedroom", "study area", "shared kitchen"],
     "image": "https://cdn.pixabay.com/photo/2018/11/12/11/29/room-3810680_640.jpg",
-    "view_property_button": "View Property"
+    "comments": [
+      {
+        "user": "Jason Lee",
+        "comment": "Stayed here for a semester and found it to be a great environment for studying and meeting new people."
+      },
+      {
+        "user": "Emma Taylor",
+        "comment": "Affordable and close to campus. Perfect for students on a budget!"
+      }
+    ]
   },
   {
     "id": 5,
     "estate_title": "Retirement Villa",
     "type": "Senior Living Community",
-    "description": "A peaceful and supportive retirement villa for seniors, offering comfort and care.",
+    "description": "Discover a peaceful haven for seniors in this supportive retirement villa offering comfort, care, and companionship. Nestled in a serene village setting, this villa provides residents with a tranquil and secure environment to enjoy their golden years. Each private room is tastefully furnished and equipped with modern amenities to ensure comfort and convenience. Residents can socialize and engage in recreational activities in the communal areas or receive personalized care from attentive staff members. With delicious meals prepared daily and medical care available on-site, this retirement villa offers everything seniors need to live a fulfilling and independent lifestyle.",
     "price": "$2,500/month",
     "status": "rent",
     "area": "1200 sqft",
     "location": "456 Elderly Drive, Serenity Village, USA",
     "facilities": ["private room", "communal dining", "medical care"],
     "image": "https://images.pexels.com/photos/4940760/pexels-photo-4940760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "view_property_button": "View Property"
+    "comments": [
+      {
+        "user": "Alice Clark",
+        "comment": "My grandparents have been living here for a year now, and they couldn't be happier. The staff is incredibly caring and attentive."
+      },
+      {
+        "user": "Robert Evans",
+        "comment": "After researching several retirement communities, we decided on this villa for its amenities and affordability. No regrets!"
+      }
+    ]
   },
   {
     "id": 6,
     "estate_title": "Beachfront Villa",
     "type": "Vacation Rental",
-    "description": "Escape to paradise in this luxurious beachfront villa, perfect for a relaxing vacation.",
+    "description": "Escape to paradise in this luxurious beachfront villa, where azure waters and pristine sands await. Nestled on the shores of Paradise Island, this villa offers the ultimate retreat for relaxation and rejuvenation. Step outside to feel the warm sand between your toes or take a dip in the private pool overlooking the ocean. Inside, the villa boasts spacious and elegantly appointed living spaces, perfect for entertaining or simply unwinding in style. Whether you're sipping cocktails on the deck or strolling along the beach at sunset, every moment spent in this villa is a slice of paradise.",
     "price": "$500/night",
     "status": "rent",
     "area": "2500 sqft",
     "location": "123 Beachfront Avenue, Paradise Island, USA",
     "facilities": ["ocean view", "private pool", "beach access"],
     "image":"https://images.pexels.com/photos/5746256/pexels-photo-5746256.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", 
-    "view_property_button": "View Property"
+    "comments": [
+      {
+        "user": "Sophia White",
+        "comment": "This villa exceeded our expectations! Waking up to the sound of waves crashing was incredibly rejuvenating."
+      },
+      {
+        "user": "Daniel Brown",
+        "comment": "Spent a week here with friends and had an amazing time. The private pool was definitely a highlight!"
+      }
+    ]
   },
   {
     "id": 7,
     "estate_title": "Mountain Chalet",
     "type": "Vacation Rental",
-    "description": "Experience the beauty of the mountains in this cozy chalet, perfect for a winter getaway.",
+    "description": "Embrace the beauty of nature in this charming mountain chalet, nestled amidst towering pines and snow-capped peaks. Located in the picturesque Alpine Town, this chalet offers the perfect escape for outdoor enthusiasts and nature lovers alike. Step inside to find a cozy interior adorned with rustic furnishings and a crackling fireplace, creating a warm and inviting atmosphere. Outside, the mountain view balcony provides breathtaking vistas of the surrounding landscape, while ski-in/ski-out access allows guests to hit the slopes with ease. Whether you're seeking adventure or tranquility, this mountain chalet promises an unforgettable getaway.",
     "price": "$400/night",
     "status": "rent",
     "area": "1800 sqft",
@@ -92,32 +146,59 @@
       "ski-in/ski-out access"
     ],
     "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
-    "view_property_button": "View Property"
+    "comments": [
+      {
+        "user": "Olivia Moore",
+        "comment": "The atmosphere of this chalet is perfect for a cozy winter getaway. Loved every moment spent by the fireplace!"
+      },
+      {
+        "user": "Liam Johnson",
+        "comment": "Ski-in/ski-out access made our stay here incredibly convenient. The view from the balcony is breathtaking!"
+      }
+    ]
   },
   {
     "id": 8,
     "estate_title": "City Loft",
     "type": "Apartment",
-    "description": "Live in style with this chic city loft, boasting modern design and urban convenience.",
+    "description": "Experience loft living at its finest in this stylish urban retreat, located in the heart of Metroville. With its industrial-chic design and panoramic city views, this loft offers a contemporary and luxurious living experience. The open floor plan maximizes space and natural light, creating a bright and airy atmosphere throughout. Entertain guests in the spacious living area or enjoy cocktails on the rooftop terrace overlooking the city skyline. With its prime location and modern amenities, this city loft is the perfect choice for those seeking upscale urban living.",
     "price": "$2,200/month",
     "status": "rent",
     "area": "1000 sqft",
     "location": "456 Urban Street, Metroville, USA",
     "facilities": ["open floor plan", "city view", "rooftop terrace"],
     "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
-    "view_property_button": "View Property"
+    "comments": [
+      {
+        "user": "Ava Thompson",
+        "comment": "The open floor plan of this loft creates a spacious feel, and the city view from the rooftop terrace is spectacular!"
+      },
+      {
+        "user": "Ethan Wilson",
+        "comment": "Had a fantastic time staying here for a month. The location is unbeatable, and the loft itself is stylish and comfortable."
+      }
+    ]
   },
   {
     "id": 9,
     "estate_title": "Lakefront Cabin",
     "type": "Vacation Rental",
-    "description": "Relax by the lake in this charming cabin, offering tranquility and breathtaking views.",
+    "description": "Escape the hustle and bustle of city life in this charming lakefront cabin, nestled in the serene lakeside community. Surrounded by towering pines and crystal-clear waters, this cabin offers a peaceful retreat for nature lovers and outdoor enthusiasts. Step outside to enjoy panoramic views of the lake from the spacious deck or take a leisurely stroll along the shoreline. Inside, the cabin features cozy furnishings and a crackling fireplace, creating a warm and inviting atmosphere. Whether you're seeking adventure or relaxation, this lakefront cabin promises an unforgettable getaway.",
     "price": "$300/night",
     "status": "rent",
     "area": "1200 sqft",
     "location": "123 Lakeview Drive, Serene Lakeside, USA",
     "facilities": ["lake view", "deck", "private dock"],
     "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
-    "view_property_button": "View Property"
+    "comments": [
+      {
+        "user": "Isabella Garcia",
+        "comment": "Absolutely serene! This cabin is perfect for a peaceful getaway."
+      },
+      {
+        "user": "Lucas",
+        "comment": "Spent a weekend here with my family and enjoyed every moment. The view of the lake is stunning!"
+      }
+    ]
   }
 ]

@@ -30,12 +30,12 @@ const UpdateProfile = () => {
       <div className=" col-span-full md:col-span-2 border-b-2 md:border-b-0 border-[#27ae60] md:border-r-2 border-dashed min-h-24 p-6">
         <div className=" w-full md:w-[80%] p-6 border-2 bg-[#eaeaead0] rounded-3xl border-[#bd2edda3] ">
           <div className=" border-b ">
-            <div
-              data-aos="zoom-in" data-aos-duration="2000"
-              className=" w-[200px] mx-auto rounded-full border-8 border-[#27ae5f96] "
+            <div data-aos="zoom-in"
+               data-aos-duration="2000"
+              className=" flex justify-center items-center w-[150px] h-[150px] mx-auto rounded-full border-8 border-[#27ae5f96] "
             >
               <img
-                className=" rounded-full"
+                className=" w-full rounded-full"
                 src={user && user.photoURL}
                 alt=""
               />
@@ -141,7 +141,7 @@ const UpdateProfile = () => {
             </label>
 
             <div data-aos="fade-up"
-            data-aos-duration="2500"
+            data-aos-duration="1000"
             data-aos-easing="ease-in-sine" className="flex justify-center">
               <input
                 className=" btn bg-[#27ae60] text-white"

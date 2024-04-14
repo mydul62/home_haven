@@ -53,10 +53,10 @@ const Register = () => {
   };
 
   return (
-    <div className="max-w-[1440px] w-[90%] mx-auto grid grid-cols-6 bg-no-repeat bg-cover bg-right p-6">
-      <div className="col-span-3 border-r-2 border-dashed">
+    <div className="max-w-[1440px] w-[90%] mx-auto grid grid-cols-1 md:grid-cols-6 bg-no-repeat bg-cover bg-right p-6">
+      <div className="col-span-full md:col-span-3 border-r-2 border-dashed">
         <div className="flex flex-col items-center justify-center min-h-[calc(100vh-128px)]">
-          <div className="w-[70%] mx-auto bg-[#aeaeae35] py-10 p-6 rounded-xl border-[3px] border-[#82589F]">
+          <div className="w-full lg:w-[70%] mx-auto bg-[#aeaeae35] py-10 p-6 rounded-xl border-[3px] border-[#82589F]">
             <form onSubmit={handleSubmit(onSubmit)}>
               <h2 className="text-[#2ed573] font-plyfair text-center text-4xl pb-6 font-bold">
                 Register Now
@@ -139,7 +139,7 @@ const Register = () => {
           </div>
         </div>
       </div>
-      <div className="flex  flex-col items-center col-span-3 w-[70%] mx-auto">
+      <div className="flex  flex-col items-center col-span-full md:col-span-3 md:w-[70%] mx-auto">
       <h2 className=" text-3xl mt-10 py-6">Privicy Policy</h2>
         <ul>
           

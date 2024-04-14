@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Firebase/FirebaseProvider";
+import TopNav from "./TopNav";
 
 const Navbar = () => {
   const {user,LogOut}= useContext(AuthContext);
@@ -19,6 +20,7 @@ const Navbar = () => {
   );
   return (
     <div className="">
+      <TopNav></TopNav>
       <div className="max-w-[1440px] w-[90%] mx-auto navbar py-4">
         <div className="navbar-start">
           <div className="dropdown">

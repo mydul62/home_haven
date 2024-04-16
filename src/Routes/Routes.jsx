@@ -8,11 +8,14 @@ import Register from "../pages/Register/Register";
 import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
 import Details from "../pages/DetailsPage/Details";
 import PrivateRouter from "./PrivateRouter";
+import ErrorPage from "../pages/Errorpage/ErrorPage";
+import YourParces from "../pages/YourParches/YourParces";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element:<Root/>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
         path:"/",
@@ -35,6 +38,10 @@ export const router = createBrowserRouter([
         path:"/details/:id",
         element:<PrivateRouter><Details></Details></PrivateRouter> ,
         loader:()=>fetch('/Data.json')
+      },
+      {
+        path:"/yourparces",
+        element:<YourParces></YourParces>
       }
     ]
   },

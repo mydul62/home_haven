@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import SlotCounter from 'react-slot-counter';
 
 import "./styles.css";
 
@@ -20,7 +21,7 @@ const Banner = () => {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
   return (
-    <div className=" mt-16 ">
+    <div className=" md:mt-16 mt-4  ">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -49,20 +50,22 @@ const Banner = () => {
             data-aos-duration="1500"
              className=" py-4 space-y-2 bg-[#eaeaeacb] rounded-xl">
               <h2 className=" font-cursive text-2xl font-bold">Customer </h2>
-              <h3 className=" font-poppins font-semibold text-xl">500k</h3>
+              <h3 className=" font-poppins font-semibold text-xl"><SlotCounter value={500} />k</h3>
             </div>
             <div data-aos="zoom-in"
             data-aos-duration="1500"
              className=" py-4 space-y-4 bg-[#eaeaeacb] rounded-xl">
               <h2 className=" font-cursive text-2xl font-bold">Services</h2>
-              <h3 className=" font-poppins font-semibold text-xl">10k</h3>
+              <h3 className=" font-poppins font-semibold text-xl"> 
+              <SlotCounter value={10} />
+             k</h3>
             </div>
             <div 
             data-aos="fade-left"
             data-aos-duration="1500"
              className=" py-4 space-y-4 bg-[#eaeaeacb] rounded-xl">
               <h2 className=" font-cursive text-2xl font-bold">Happy clint</h2>
-              <h3 className=" font-poppins font-semibold text-xl">95%</h3>
+              <h3 className=" font-poppins font-semibold text-xl"><SlotCounter value={95} />%</h3>
             </div>
           </div>
         </SwiperSlide>

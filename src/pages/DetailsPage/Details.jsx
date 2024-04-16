@@ -15,7 +15,7 @@ const Details = () => {
 
   return (
     <div>
-      <div className='mt-24'>
+      <div className='mt-44'>
       {
         loadedData.map(dt=>(
            <Detail data={dt} key={dt.id}></Detail>

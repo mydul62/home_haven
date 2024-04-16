@@ -49,7 +49,7 @@
     "type": "Apartment",
     "description": "Indulge in luxury living with this exquisite apartment offering breathtaking city views and top-of-the-line amenities. Located in the heart of the bustling cityscape, this apartment provides the perfect retreat from the urban hustle and bustle. Step inside to discover a spacious and elegantly appointed interior featuring high ceilings, hardwood floors, and floor-to-ceiling windows. The gourmet kitchen is a chef's dream, equipped with premium appliances and sleek cabinetry. Residents can unwind on the private balcony overlooking the city skyline or stay active in the state-of-the-art fitness center. With unparalleled luxury and convenience, this apartment sets the standard for upscale city living.",
     "price": "$3,000/month",
-    "status": "rent",
+    "status": "sale",
     "area": "1500 sqft",
     "location": "789 Urban Avenue, Cityscape, USA",
     "facilities": ["living room", "balcony", "fitness center"],
@@ -93,7 +93,7 @@
     "type": "Senior Living Community",
     "description": "Discover a peaceful haven for seniors in this supportive retirement villa offering comfort, care, and companionship. Nestled in a serene village setting, this villa provides residents with a tranquil and secure environment to enjoy their golden years. Each private room is tastefully furnished and equipped with modern amenities to ensure comfort and convenience. Residents can socialize and engage in recreational activities in the communal areas or receive personalized care from attentive staff members. With delicious meals prepared daily and medical care available on-site, this retirement villa offers everything seniors need to live a fulfilling and independent lifestyle.",
     "price": "$2,500/month",
-    "status": "rent",
+    "status": "sale",
     "area": "1200 sqft",
     "location": "456 Elderly Drive, Serenity Village, USA",
     "facilities": ["private room", "communal dining", "medical care"],
@@ -137,7 +137,7 @@
     "type": "Vacation Rental",
     "description": "Embrace the beauty of nature in this charming mountain chalet, nestled amidst towering pines and snow-capped peaks. Located in the picturesque Alpine Town, this chalet offers the perfect escape for outdoor enthusiasts and nature lovers alike. Step inside to find a cozy interior adorned with rustic furnishings and a crackling fireplace, creating a warm and inviting atmosphere. Outside, the mountain view balcony provides breathtaking vistas of the surrounding landscape, while ski-in/ski-out access allows guests to hit the slopes with ease. Whether you're seeking adventure or tranquility, this mountain chalet promises an unforgettable getaway.",
     "price": "$400/night",
-    "status": "rent",
+    "status": "sale",
     "area": "1800 sqft",
     "location": "789 Mountain View Road, Alpine Town, USA",
     "facilities": [
@@ -145,7 +145,7 @@
       "mountain view balcony",
       "ski-in/ski-out access"
     ],
-    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
+    "image": "https://images.pexels.com/photos/5619177/pexels-photo-5619177.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "comments": [
       {
         "user": "Olivia Moore",
@@ -167,7 +167,7 @@
     "area": "1000 sqft",
     "location": "456 Urban Street, Metroville, USA",
     "facilities": ["open floor plan", "city view", "rooftop terrace"],
-    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
+    "image":"https://images.pexels.com/photos/6045336/pexels-photo-6045336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "comments": [
       {
         "user": "Ava Thompson",
@@ -189,7 +189,7 @@
     "area": "1200 sqft",
     "location": "123 Lakeview Drive, Serene Lakeside, USA",
     "facilities": ["lake view", "deck", "private dock"],
-    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/61f3b188989837.5de7452bb7965.png",
+    "image":"https://images.pexels.com/photos/2659629/pexels-photo-2659629.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     "comments": [
       {
         "user": "Isabella Garcia",

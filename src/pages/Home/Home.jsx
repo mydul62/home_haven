@@ -31,7 +31,7 @@ const Home = () => {
         </div>
       <div className="ourservices">
         <div className="title text-center w-[80%] md:max-w-[40%] mx-auto space-y-5 ">
-          <h2 className=" text-5xl">Our All Services</h2>
+          <h2 className=" text-4xl">Our All <span className=" text-orange-500">Services</span></h2>
           <p className=" text-xl ">
           Explore our estate listings for modern flats. Find your perfect home with ease. Start your journey today!
           </p>
@@ -52,7 +52,7 @@ const Home = () => {
       ))}
 </div>
 <div onClick={handleShowMore} className="max-w-[1440px] flex justify-center my-24 mx-auto">
-    <button className="flex justify-center gap-1 items-center py-3 bg-blue-500 px-8 text-white rounded-lg">{show?<TbArrowDown />
+    <button className="flex justify-center gap-1 items-center py-3 bg-orange-400 px-8 text-white rounded-lg">{show?<TbArrowDown />
 :<TbArrowUp />
 }{show?"Show More":"show Less"}</button>
   </div>

@@ -1,6 +1,6 @@
 import {Outlet} from "react-router-dom";
 import Footer from "../../Components/Footer/Footer";
-import Navmenu from "../../Components/Navmenu";
+import Navmenu from "../../Components/NavBar/Navmenu";
 const Root = () => {
   return (
     <div>

@@ -36,7 +36,6 @@ const FirebaseProvider = ({ children }) => {
       phoneNumber: phone,
       photoURL: PhotoURL,
     }).then(() => {
-      console.log(phone);
       setUser((prevUser) => ({
         ...prevUser,
         displayName: name,

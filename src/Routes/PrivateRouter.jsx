@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom';
 const PrivateRouter = ({children}) => {
   const {loading,user}=useContext(AuthContext)
   const location = useLocation();
-  console.log(location);
+
    if(loading){
     return <div className=" flex justify-center items-center mt-20"> <HashLoader color="#36d7b7" /></div>
    }

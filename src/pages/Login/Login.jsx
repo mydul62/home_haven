@@ -57,7 +57,7 @@ const Login = () => {
   };
 
   return (
-    <div className="max-w-[1440px] w-[95%] mx-auto flex flex-col items-center justify-center min-h-[calc(100vh-128px)]">
+    <div className="max-w-[1440px] w-[95%] mx-auto flex flex-col items-center justify-center min-h-[calc(100vh-128px)] mt-24">
       <div className="w-[90%] md:w-4/6 lg:w-2/6 mx-auto bg-[#aeaeae35] py-10 p-6 rounded-xl border-[3px] border-[#82589F]">
         <form onSubmit={handleSubmit(onSubmit)}>
           <h2 className="text-[#2ed573] font-plyfair text-center text-3xl md:text-4xl pb-6 font-bold">

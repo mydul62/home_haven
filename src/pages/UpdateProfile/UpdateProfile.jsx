@@ -26,7 +26,7 @@ const UpdateProfile = () => {
       });
   };
   return (
-    <div className="max-w-[1440px] w-[90%] gap-6 mx-auto grid grid-cols-1 md:grid-cols-5 my-24">
+    <div className="max-w-[1440px] w-[90%] gap-6 mx-auto grid grid-cols-1 md:grid-cols-5 my-44">
       <div className=" col-span-full md:col-span-2 border-b-2 md:border-b-0 border-[#27ae60] md:border-r-2 border-dashed min-h-24 p-6">
         <div className=" w-full md:w-[80%] p-6 border-2 bg-[#eaeaead0] rounded-3xl border-[#bd2edda3] ">
           <div className=" border-b ">

@@ -1,11 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { RiLogoutCircleLine } from 'react-icons/ri';
-import { FaUserCircle } from 'react-icons/fa';
-import { Transition } from '@headlessui/react';
-import { AuthContext } from '../Firebase/FirebaseProvider';
+import { AuthContext } from '../../Firebase/FirebaseProvider';
 import { Link, NavLink } from 'react-router-dom';
-import TopNav from './NavBar/TopNav';
+import TopNav from './TopNav';
 
 const Navmenu = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -21,6 +18,9 @@ const Navmenu = () => {
         <NavLink to={"/"}>Home</NavLink>
       </li>
       <li className="hover:text-gray-300 text-xl">
+        <NavLink to={"/yourparces"}>Cart</NavLink>
+      </li>
+      <li className="hover:text-gray-300 text-xl">
         <NavLink to={"/updateprofile"}>Update Profile</NavLink>
       </li>
     </>
@@ -32,7 +32,7 @@ const Navmenu = () => {
 
   return (
    <>
-   <div className=' fixed top-0 w-full z-40'>
+   <div className='  top-0 w-full z-40'>
    <TopNav></TopNav>
    <div className='bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-4 px-6'>
      <nav className=" max-w-[1440px] mx-auto  ">
@@ -81,10 +81,11 @@ const Navmenu = () => {
    </div>
    <div>
    </div>
-   </div>
-   <ul className={`${showSidebar?"static":"absolute top-[-100px]"} flex flex-col justify-center items-center gap-4 py-6`}>
+   <ul className={`${showSidebar?"static":"absolute top-[300px]"} flex bg-slate-300 rounded-b-xl  md:hidden flex-col justify-center items-center  top-[-300px] gap-4 py-6`}>
     {navlist}
   </ul>
+   </div>
+  
    </>
   );
 };

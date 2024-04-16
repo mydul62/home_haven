@@ -53,7 +53,7 @@ const Register = () => {
   };
 
   return (
-    <div className="max-w-[1440px] w-[90%] mx-auto grid grid-cols-1 md:grid-cols-6 bg-no-repeat bg-cover bg-right p-6">
+    <div className="max-w-[1440px] w-[90%] mx-auto grid grid-cols-1 md:grid-cols-6 bg-no-repeat bg-cover bg-right p-6 mt-44">
       <div className="col-span-full md:col-span-3 border-r-2 border-dashed">
         <div className="flex flex-col items-center justify-center min-h-[calc(100vh-128px)]">
           <div className="w-full lg:w-[70%] mx-auto bg-[#aeaeae35] py-10 p-6 rounded-xl border-[3px] border-[#82589F]">

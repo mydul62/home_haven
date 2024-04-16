@@ -1,16 +1,25 @@
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { saveBuyInfo } from '../../Components/Residencies/Utils/LocalStorage/LocalBuyProduct';
+import { saveRentInfo } from '../../Components/Residencies/Utils/LocalStorage/LocalRentProduct';
 
 const Detail = ({ data }) => {
   const { comments } = data;
-  console.log(data);
-  
+  const handleBuy =(data)=>{
+    saveBuyInfo(data)
+  }
+  const handleRent =(data)=>{
+    saveRentInfo(data)
+  }
   return (
     <div className="max-w-[1440px] w-[90%] mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="col-span-2">
-          <div className='p-6 bg-[#eaeaea]'>
+          <div  className='relative p-6 bg-[#eaeaea]'>
             <img className='w-full' src={data && data.image} alt="" />
+            <div className=" absolute top-10 right-10 bg-orange-400 h-16 w-24 flex justify-center items-center text-xl text-white rounded-l-full">
+    <h3>{data.status}</h3>
+  </div>
           </div>
           <div className='pt-6'>
             <Tabs>
@@ -71,6 +80,12 @@ const Detail = ({ data }) => {
             <div className='flex justify-between border-b'>
               <h2>Price</h2>
               <h2>{data.price}</h2>
+            </div>
+            <div className=' flex justify-end'>
+              {
+                data.status=="rent"?<button onClick={()=>handleRent(data)}  className=' btn bg-orange-400 text-white'>Rent Now</button>:
+                <button onClick={()=>handleBuy(data)}  className=' btn bg-orange-400 text-white'>Sale Now</button>
+              }
             </div>
           </div>
          </div>

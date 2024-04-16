@@ -22,7 +22,7 @@ const Details = () => {
         ))
       }
     </div>
-     <div className=' max-w-[1440px] w-[90%] mx-auto pt-24'>
+     <div className=' max-w-[1440px] w-[90%] mb-16 mx-auto pt-24'>
       <h2 className=' text-orange-400 font-poppins text-3xl font-semibold'>Our More Popuklar services</h2>
      </div>
      <div>

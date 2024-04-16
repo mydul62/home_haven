@@ -14,7 +14,7 @@ const Detail = ({ data }) => {
   return (
     <div className="max-w-[1440px] w-[90%] mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-        <div className="col-span-2">
+        <div className="col-span-full  md:col-span-2">
           <div  className='relative p-6 bg-[#eaeaea]'>
             <img className='w-full' src={data && data.image} alt="" />
             <div className=" absolute top-10 right-10 bg-orange-400 h-16 w-24 flex justify-center items-center text-xl text-white rounded-l-full">
@@ -47,7 +47,8 @@ const Detail = ({ data }) => {
             </Tabs>
           </div>
         </div>
-        <div className="col-span-1   ">
+        <div className="col-span-full md:col-span-1    ">
+
          <div className=' bg-[#eaeaea] p-6 rounded-xl'>
          <h3 className='text-center text-3xl font-poppins font-semibold pb-8'>Description</h3>
           <div className='space-y-6'>

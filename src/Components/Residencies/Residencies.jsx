@@ -23,8 +23,10 @@ const Residencies = ({ loadData }) => {
   };
 
   return (
-    <div className="">
-      <div className=" relative">
+    <div data-aos="fade-left"
+    data-aos-easing="linear"
+    data-aos-duration="1500" className="relative max-w-[1440px] mx-auto w-[90%]">
+      <div className=" ">
         <Swiper {...sliderSettings} className="" onSwiper={setSwiper}>
           {loadData.map((data) => (
             <SwiperSlide key={data.id}>
@@ -51,7 +53,7 @@ const Residencies = ({ loadData }) => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="md:absolute justify-center  my-6 md:my-0 top-0 right-0 z-10 flex  gap-4">
+        <div className="absolute  mb-16 md:my-0 md:-top-20 bottom-0 right-0 z-10 flex  gap-4">
           <button className="btn bg-[#27ae60]" onClick={slideToPrev}>
             <GrPrevious size={20} />
           </button>

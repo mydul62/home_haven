@@ -21,12 +21,12 @@ const Banner = () => {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
   return (
-    <div className=" md:mt-16 mt-4  ">
+    <div className=" md:mt-32 mt-20 ">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         
@@ -35,11 +35,11 @@ const Banner = () => {
         }}
         
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide className="">
           <img
             src="https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
@@ -71,7 +71,7 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://i.ibb.co/GkJQV6K/pexels-david-mcbee-396303.jpg"
             alt=""
           />
          <div className=" grid grid-cols-1 md:grid-cols-3 gap-6 p-4 bg-[#eaeaea73] text-black absolute w-[60%] mx-auto rounded-xl z-30 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">

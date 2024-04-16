@@ -32,7 +32,7 @@ const Navmenu = () => {
 
   return (
    <>
-   <div className='  top-0 w-full z-40'>
+   <div className=' fixed  top-0 w-full z-40'>
    <TopNav></TopNav>
    <div className='bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-4 px-6'>
      <nav className=" max-w-[1440px] mx-auto  ">
@@ -81,7 +81,7 @@ const Navmenu = () => {
    </div>
    <div>
    </div>
-   <ul className={`${showSidebar?"static":"absolute top-[300px]"} flex bg-slate-300 rounded-b-xl  md:hidden flex-col justify-center items-center  top-[-300px] gap-4 py-6`}>
+   <ul className={`${showSidebar?"static":"absolute top-[300px]"} -top-20 flex bg-slate-300 rounded-b-xl  md:hidden flex-col justify-center items-center  gap-4 py-6`}>
     {navlist}
   </ul>
    </div>

@@ -4,18 +4,22 @@ import { MdOutlineEmail } from "react-icons/md";
 
 const TopNav = () => {
   return (
-    <div className="bg-[#2f3640] text-white py-3 md:block hidden">
-      <div className=" flex justify-between max-w-[1440px] w-[90%] mx-auto ">
-      <div className=" md:w-[40%] ">
-        <h3> <Marquee>Best eid offer || Discout in All 20% || Eid Mobarok</Marquee> </h3>
+    <div className="bg-gray-900 text-white py-3">
+      <div className="max-w-screen-xl mx-auto px-4 flex justify-between items-center">
+        <Marquee gradient={false}>
+          <p className="text-sm">Best Eid Offer! Get 20% Discount on All Items. Eid Mubarak!</p>
+        </Marquee>
+        <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
+            <IoCallOutline />
+            <span>01302104188</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <MdOutlineEmail />
+            <span>MydulNiter62@gmail.com</span>
+          </div>
+        </div>
       </div>
-      <div className=" flex justify-center items-center gap-4">
-        <p className=" flex items-center gap-1"><IoCallOutline />
-01302104188</p>
-<p className=" flex justify-center items-center gap-1"><MdOutlineEmail />
-MydulNiter62@gmail.com</p>
-      </div>
-    </div>
     </div>
   );
 };

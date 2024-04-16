@@ -8,6 +8,8 @@ import { TbArrowUp } from "react-icons/tb";
 import { TbArrowDown } from "react-icons/tb";
 import Residencies from "../../Components/Residencies/Residencies";
 import ResidentialTitle from "../../Components/Residencies/ResidentialTitle";
+import Review from "../../Components/Review/Review";
+import ReviewTitle from "../../Components/Review/ReviewTitle";
 
 
 // ..
@@ -29,7 +31,7 @@ const Home = () => {
           <ResidentialTitle></ResidentialTitle>
         <Residencies loadData={loadData}></Residencies>
         </div>
-      <div className="ourservices">
+      <div className="ourservices mt-16">
         <div className="title text-center w-[80%] md:max-w-[40%] mx-auto space-y-5 ">
           <h2 className=" text-4xl">Our All <span className=" text-orange-500">Services</span></h2>
           <p className=" text-xl ">
@@ -57,7 +59,9 @@ const Home = () => {
 }{show?"Show More":"show Less"}</button>
   </div>
       </div>
-      <div className=" ">
+      <div className=" max-w-[1340px] w-[90%]  mx-auto">
+        <ReviewTitle></ReviewTitle>
+        <Review></Review>
       </div>
     </>
   );

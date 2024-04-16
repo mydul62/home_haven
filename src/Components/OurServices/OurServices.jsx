@@ -4,7 +4,7 @@ const OurServices = ({data}) => {
   const {estate_title,description,image,view_property_button,id,status}=data
   return (
     <div   data-aos="fade-up"
-    data-aos-duration="1500"  className="card relative ">
+    data-aos-duration="1500"  className="card relative  ">
   <figure><img className="h-[300px] w-full" src={image} alt="Shoes" /></figure>
   <div className=" space-y-6">
     <h2 className=" text-3xl mt-6 text-[#222222] font-poppins font-semibold">

@@ -10,11 +10,11 @@ const Review = () => {
   }, []);
 
   return (
-    <div data-aos="fade-up"
-    data-aos-duration="3000" className="container mx-auto ">
+    <div  className="container mx-auto ">
       <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
         {data.slice(0, 3).map((dt) => (
-          <div key={dt.id} className="bg-white rounded-lg shadow-md overflow-hidden">
+          <div data-aos="fade-up"
+          data-aos-duration="3000" key={dt.id} className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="p-6">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 mr-4 rounded-full overflow-hidden">

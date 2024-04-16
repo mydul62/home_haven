@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import PageTitle from "../../Components/Banner/PageTitle/PageTitle";
 
 const ErrorPage = () => {
   return (
     <div className="relative py-16 px-4 w-full min-h-screen bg-gray-50">
+      <PageTitle title={"Error-Page"}></PageTitle>
     <div className="flex flex-col items-center">
 
       {/* :TITLE */}

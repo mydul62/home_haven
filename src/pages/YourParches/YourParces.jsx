@@ -1,3 +1,4 @@
+import PageTitle from "../../Components/Banner/PageTitle/PageTitle";
 import { getBuyInfo } from "../../Components/Residencies/Utils/LocalStorage/LocalBuyProduct";
 import { getRentInfo } from "../../Components/Residencies/Utils/LocalStorage/LocalRentProduct";
 
@@ -6,12 +7,11 @@ const YourParcels = () => {
   const rentData = getRentInfo();
 
   return (
-    <div className="container mx-auto px-4 py-8 mt-44">
+    <div className="container mx-auto px-4 py-8 mt-24 md:mt-44">
+      <PageTitle title={"Your Parcels"} />
       <h2 className="text-3xl font-bold mb-6">Your Parcels</h2>
 
-      <div data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500" className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="bg-white rounded-xl shadow-md overflow-hidden">
           <h3 className="bg-gradient-to-r from-blue-400 to-purple-600 text-white text-xl font-bold py-4 px-6 mb-4 rounded-t-xl">Your Buy Items</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
@@ -28,9 +28,7 @@ const YourParcels = () => {
           </div>
         </div>
 
-        <div data-aos="fade-left"
-     data-aos-easing="linear"
-     data-aos-duration="1500"  className="bg-white rounded-xl shadow-md overflow-hidden">
+        <div className="bg-white rounded-xl shadow-md overflow-hidden">
           <h3 className="bg-gradient-to-r from-green-400 to-blue-600 text-white text-xl font-bold py-4 px-6 mb-4 rounded-t-xl">Your Rent Items</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
             {rentData.map(data => (

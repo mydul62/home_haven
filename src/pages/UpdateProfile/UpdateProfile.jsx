@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Firebase/FirebaseProvider";
 import { useForm } from "react-hook-form";
+import PageTitle from "../../Components/Banner/PageTitle/PageTitle";
 
 const UpdateProfile = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -20,7 +21,8 @@ const UpdateProfile = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto mt-44">
+    <div className="max-w-4xl mx-auto mt-44 md:mt-56">
+      <PageTitle title={"Update-Profile"}></PageTitle>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white rounded-xl shadow-lg p-8">
         <div className="md:border-r-2 md:border-gray-200">
           <div className="text-center mb-8">
@@ -33,7 +35,7 @@ const UpdateProfile = () => {
           <div className="border-b border-gray-200 pb-4 mb-4">
             <h3 className="text-lg font-semibold mb-2">Personal Information</h3>
             <p className="text-gray-700">Name: {user && user.displayName}</p>
-            <p className="text-gray-700">Phone: {user && user.phoneNumber ? user.phoneNumber : "Not provided"}</p>
+            {/* <p className="text-gray-700">Phone: {user && user.phoneNumber ? user.phoneNumber : "Not provided"}</p> */}
           </div>
         </div>
         
@@ -47,13 +49,13 @@ const UpdateProfile = () => {
               className="input input-bordered w-full"
               defaultValue={user && user.displayName}
             />
-            <input
+            {/* <input
               {...register("phone")}
               type="text"
               placeholder="Enter your phone number"
               className="input input-bordered w-full"
               defaultValue={user && user.phoneNumber ? user.phoneNumber : ""}
-            />
+            /> */}
             <input
               {...register("photoURL")}
               type="text"

@@ -1,21 +1,21 @@
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
    <div className="bg-base-300 mt-24">
-     <footer className="footer max-w-[1440px] w-[90%] mx-auto  p-10 text-base-content">
-  <nav>
+     <footer className="footer grid justify-center grid-cols-2 lg:grid-cols-3 max-w-[1440px] w-[90%] mx-auto  p-10 text-base-content">
+  <nav className="">
     <h6 className="footer-title">Services</h6> 
-    <a className="link link-hover">Branding</a>
-    <a className="link link-hover">Design</a>
-    <a className="link link-hover">Marketing</a>
-    <a className="link link-hover">Advertisement</a>
+    <a className="link link-hover">Single family Home</a>
+    <a className="link link-hover">Luxury Apartment</a>
+    <a className="link link-hover">Student Housing</a>
+    <a className="link link-hover">Apartment</a>
   </nav> 
   <nav>
-    <h6 className="footer-title">Company</h6> 
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
+    <h6 className="footer-title">Explore</h6> 
+    <Link to={"/"} className="link link-hover">Home</Link>
+    <Link to={"/updateprofile"} className="link link-hover">Update Profile</Link>
+    <Link to={"/yourparces"} className="link link-hover">Cart</Link>
   </nav> 
   <nav>
     <h6 className="footer-title">Social</h6> 

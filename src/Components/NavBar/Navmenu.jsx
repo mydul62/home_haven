@@ -3,6 +3,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { AuthContext } from '../../Firebase/FirebaseProvider';
 import { Link, NavLink } from 'react-router-dom';
 import TopNav from './TopNav';
+import './Navbar.css'
 
 const Navmenu = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -32,7 +33,7 @@ const Navmenu = () => {
 
   return (
    <>
-   <div className=' fixed  top-0 w-full z-40'>
+   <div className='fixed top-0 w-full z-40'>
    <TopNav></TopNav>
    <div className='bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-4 px-6'>
      <nav className=" max-w-[1440px] mx-auto  ">
@@ -49,7 +50,7 @@ const Navmenu = () => {
           )}
         </div>
         <div className=" md:flex items-center">
-          <ul className=" hidden md:flex space-x-4">
+          <ul className="menu hidden  md:flex items-center gap-6 md:flex-row space-x-4">
             {navlist}
           </ul>
           <div className="relative ml-4">
@@ -79,11 +80,15 @@ const Navmenu = () => {
       </div>
     </nav>
    </div>
-   <div>
-   </div>
-   <ul className={`${showSidebar?"static":"absolute top-[300px]"} -top-20 flex bg-slate-300 rounded-b-xl  md:hidden flex-col justify-center items-center  gap-4 py-6`}>
+   <div className={`absolute ${showSidebar ? 'top-[70px]' : '-top-80'} ease-in duration-300 z-40 w-full text-center items-center md:hidden flex justify-center bg-[#c8d6e5] opacity-95 font-bold`}>
+  <ul className='flex flex-col justify-center items-center text-center py-6 gap-6'>
     {navlist}
   </ul>
+</div>
+
+   <div>
+   </div>
+  
    </div>
   
    </>

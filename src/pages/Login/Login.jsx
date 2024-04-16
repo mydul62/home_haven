@@ -11,6 +11,7 @@ import { useLocation } from "react-router-dom";
 import * as React from "react";
 import Alert from "@mui/material/Alert";
 import Stack from "@mui/material/Stack";
+import PageTitle from "../../Components/Banner/PageTitle/PageTitle";
 
 const Login = () => {
   const [show, setShow] = useState(false);
@@ -58,6 +59,7 @@ const Login = () => {
 
   return (
     <div className="max-w-[1440px] w-[95%] mx-auto flex flex-col items-center justify-center min-h-[calc(100vh-128px)] mt-24">
+      <PageTitle title={"Login"}></PageTitle>
       <div className="w-[90%] md:w-4/6 lg:w-2/6 mx-auto bg-[#aeaeae35] py-10 p-6 rounded-xl border-[3px] border-[#82589F]">
         <form onSubmit={handleSubmit(onSubmit)}>
           <h2 className="text-[#2ed573] font-plyfair text-center text-3xl md:text-4xl pb-6 font-bold">

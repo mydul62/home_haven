@@ -21,7 +21,7 @@ const Banner = () => {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
   return (
-    <div className=" md:mt-32 mt-20 ">
+    <div className=" md:mt-24 mt-16  ">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -35,11 +35,11 @@ const Banner = () => {
         }}
         
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay,Pagination, Navigation]}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >
-        <SwiperSlide className="">
+        <SwiperSlide>
           <img
             src="https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
@@ -71,29 +71,31 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="https://i.ibb.co/GkJQV6K/pexels-david-mcbee-396303.jpg"
+            src="https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
           />
          <div className=" grid grid-cols-1 md:grid-cols-3 gap-6 p-4 bg-[#eaeaea73] text-black absolute w-[60%] mx-auto rounded-xl z-30 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
             <div 
             data-aos="fade-right"
             data-aos-duration="1500"
-             className=" py-4 space-y-2 bg-[#eaeaea] rounded-xl">
+             className=" py-4 space-y-2 bg-[#eaeaeacb] rounded-xl">
               <h2 className=" font-cursive text-2xl font-bold">Customer </h2>
-              <h3 className=" font-poppins font-semibold text-xl">500k</h3>
+              <h3 className=" font-poppins font-semibold text-xl"><SlotCounter value={500} />k</h3>
             </div>
             <div data-aos="zoom-in"
             data-aos-duration="1500"
-             className=" py-4 space-y-4 bg-[#eaeaea] rounded-xl">
+             className=" py-4 space-y-4 bg-[#eaeaeacb] rounded-xl">
               <h2 className=" font-cursive text-2xl font-bold">Services</h2>
-              <h3 className=" font-poppins font-semibold text-xl">10k</h3>
+              <h3 className=" font-poppins font-semibold text-xl"> 
+              <SlotCounter value={10} />
+             k</h3>
             </div>
             <div 
             data-aos="fade-left"
             data-aos-duration="1500"
-             className=" py-4 space-y-4 bg-[#eaeaea] rounded-xl">
+             className=" py-4 space-y-4 bg-[#eaeaeacb] rounded-xl">
               <h2 className=" font-cursive text-2xl font-bold">Happy clint</h2>
-              <h3 className=" font-poppins font-semibold text-xl">95%</h3>
+              <h3 className=" font-poppins font-semibold text-xl"><SlotCounter value={95} />%</h3>
             </div>
           </div>
         </SwiperSlide>
@@ -106,22 +108,24 @@ const Banner = () => {
             <div 
             data-aos="fade-right"
             data-aos-duration="1500"
-             className=" py-4 space-y-2 bg-[#eaeaea] rounded-xl">
+             className=" py-4 space-y-2 bg-[#eaeaeacb] rounded-xl">
               <h2 className=" font-cursive text-2xl font-bold">Customer </h2>
-              <h3 className=" font-poppins font-semibold text-xl">500k</h3>
+              <h3 className=" font-poppins font-semibold text-xl"><SlotCounter value={500} />k</h3>
             </div>
             <div data-aos="zoom-in"
             data-aos-duration="1500"
-             className=" py-4 space-y-4 bg-[#eaeaea] rounded-xl">
+             className=" py-4 space-y-4 bg-[#eaeaeacb] rounded-xl">
               <h2 className=" font-cursive text-2xl font-bold">Services</h2>
-              <h3 className=" font-poppins font-semibold text-xl">10k</h3>
+              <h3 className=" font-poppins font-semibold text-xl"> 
+              <SlotCounter value={10} />
+             k</h3>
             </div>
             <div 
             data-aos="fade-left"
             data-aos-duration="1500"
-             className=" py-4 space-y-4 bg-[#eaeaea] rounded-xl">
+             className=" py-4 space-y-4 bg-[#eaeaeacb] rounded-xl">
               <h2 className=" font-cursive text-2xl font-bold">Happy clint</h2>
-              <h3 className=" font-poppins font-semibold text-xl">95%</h3>
+              <h3 className=" font-poppins font-semibold text-xl"><SlotCounter value={95} />%</h3>
             </div>
           </div>
         </SwiperSlide>

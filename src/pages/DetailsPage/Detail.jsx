@@ -2,6 +2,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { saveBuyInfo } from '../../Components/Residencies/Utils/LocalStorage/LocalBuyProduct';
 import { saveRentInfo } from '../../Components/Residencies/Utils/LocalStorage/LocalRentProduct';
+import PageTitle from '../../Components/Banner/PageTitle/PageTitle';
 
 const Detail = ({ data }) => {
   const { comments } = data;
@@ -13,6 +14,7 @@ const Detail = ({ data }) => {
   }
   return (
     <div className="max-w-[1440px] w-[90%] mx-auto">
+      <PageTitle title={"product Details"}></PageTitle>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="col-span-full  md:col-span-2">
           <div  className='relative p-6 bg-[#eaeaea]'>

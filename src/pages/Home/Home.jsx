@@ -10,6 +10,7 @@ import Residencies from "../../Components/Residencies/Residencies";
 import ResidentialTitle from "../../Components/Residencies/ResidentialTitle";
 import Review from "../../Components/Review/Review";
 import ReviewTitle from "../../Components/Review/ReviewTitle";
+import PageTitle from "../../Components/Banner/PageTitle/PageTitle";
 
 
 // ..
@@ -23,9 +24,12 @@ const Home = () => {
   }
   return (
     <>
+    <PageTitle title={"Home"}></PageTitle>
       <div>
         <Banner></Banner>
       </div >
+
+      {/* ------------------------------------------------------------------- */}
 
         <div className="max-w-[1440px] mx-auto">
           <ResidentialTitle></ResidentialTitle>

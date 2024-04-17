@@ -12,11 +12,12 @@ import * as React from "react";
 import Alert from "@mui/material/Alert";
 import Stack from "@mui/material/Stack";
 import PageTitle from "../../Components/Banner/PageTitle/PageTitle";
+import { FaGithub } from "react-icons/fa";
 
 const Login = () => {
   const [show, setShow] = useState(false);
   const [succsess, setSuccsess] = useState(false);
-  const { signInPass, googleSignIn } = useContext(AuthContext);
+  const { signInPass, googleSignIn,githubSignIn } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
   const form = location?.state || "/";
@@ -53,6 +54,8 @@ const Login = () => {
         console.log(error.message);
       });
   };
+
+  
   const passShow = () => {
     setShow(!show);
   };
@@ -113,17 +116,27 @@ const Login = () => {
             </div>
           </div>
           <div className="flex gap-3 flex-col items-center justify-center pt-6">
-            <p className=" text-xl font-bold">or</p>
-            <p className="mb-3" onClick={handleGoogleLogin}>
-              <FcGoogle size={30} />{" "}
-            </p>
             <input
               className="bg-[#2ed573] py-2 rounded-xl w-1/3 text-xl"
               type="submit"
               value={"Login"}
             />
+            
           </div>
         </form>
+       
+
+            <div className="flex flex-col items-center justify-center mt-6">
+            <p className=" text-xl font-bold">or</p>
+           <div className=" flex  gap-4">
+           <p className="mb-3" onClick={handleGoogleLogin}>
+              <FcGoogle size={30} />{" "}
+            </p> <span className=" text-3xl">/</span>
+            <p className="mb-3" onClick={()=>githubSignIn()}>
+              <FaGithub size={30} />{" "}
+            </p>
+           </div>
+            </div>
         <h4 className="pt-4">
           Already have an account?{" "}
           <Link to={"/register"} className="text-xl underline">

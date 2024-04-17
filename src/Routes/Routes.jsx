@@ -41,7 +41,7 @@ export const router = createBrowserRouter([
       },
       {
         path:"/yourparces",
-        element:<YourParces></YourParces>
+        element:<PrivateRouter><YourParces></YourParces></PrivateRouter>
       }
     ]
   },

@@ -44,7 +44,7 @@ const Residencies = ({ loadData }) => {
                       <h2 className="text-2xl font-bold text-[#130f40]">
                         {data.estate_title}
                       </h2>
-                      <p>{data.description.slice(0, 60)}</p>
+                      <p>{data.description.slice(0, 50)}....</p>
                     </div>
                   </div>
                 </div>

@@ -12,16 +12,16 @@ const Navmenu = () => {
   const handleSignOut = () => {
     LogOut();
   };
- const avatar="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg";
+ const avatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJKlrocynENzcYD9nHmspjUDPb6-s2bOBpNw3sx631gA&s";
   const navlist = (
     <>
-      <li className="hover:text-gray-300 text-xl ">
+      <li className="hover:text-orange-500 text-xl ">
         <NavLink to={"/"}>Home</NavLink>
       </li>
-      <li className="hover:text-gray-300 text-xl">
+      <li className="hover:text-orange-500  text-xl">
         <NavLink to={"/yourparces"}>Cart</NavLink>
       </li>
-      <li className="hover:text-gray-300 text-xl">
+      <li className="hover:text-orange-500  text-xl">
         <NavLink to={"/updateprofile"}>Update Profile</NavLink>
       </li>
     </>
@@ -35,7 +35,7 @@ const Navmenu = () => {
    <>
    <div className='fixed top-0 w-full z-40'>
    <TopNav></TopNav>
-   <div className='bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-4 px-6'>
+   <div className='bg-gradient-to-r from-[#8c7ae6ac]  to-[#0096e6a4] py-2 text-white  px-6'>
      <nav className=" max-w-[1440px] mx-auto  ">
       <div className="flex justify-between  items-center">
         <div className="flex items-center">
@@ -50,7 +50,7 @@ const Navmenu = () => {
           )}
         </div>
         <div className=" md:flex items-center">
-          <ul className="menu hidden  md:flex items-center gap-6 md:flex-row space-x-4">
+          <ul className="menu hidden  md:flex items-center  md:flex-row space-x-4">
             {navlist}
           </ul>
           <div className="relative ml-4">

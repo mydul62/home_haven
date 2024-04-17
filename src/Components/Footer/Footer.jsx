@@ -26,6 +26,9 @@ const Footer = () => {
     </div>
   </nav>
 </footer>
+<div className=" flex justify-center py-2">
+  <p className=" text-[16x]">All right reserved - 2024 | <a className=" text-secondary" href="https://www.facebook.com/profile.php?id=100021415790435">Mahim</a></p>
+</div>
    </div>
   );
 };

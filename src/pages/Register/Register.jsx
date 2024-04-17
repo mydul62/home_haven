@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Firebase/FirebaseProvider";
 import { updateProfile } from "firebase/auth";
@@ -7,11 +7,14 @@ import auth from "../../Firebase/Firebase-config";
 import { RxEyeOpen } from "react-icons/rx";
 import { GoEyeClosed } from "react-icons/go";
 import PageTitle from "../../Components/Banner/PageTitle/PageTitle";
+import toast from "react-hot-toast";
+
 const Register = () => {
   const [show, setShow] = useState(false);
-  const [error,setError]=useState(null)
-  const [passError,setPassError]=useState(null)
-  const { signUpPass } = useContext(AuthContext);
+  const [error, setError] = useState(null);
+  const [passError, setPassError] = useState(null);
+  const { signUpPass ,LogOut} = useContext(AuthContext);
+  const navigate = useNavigate()
   const {
     register,
     handleSubmit,
@@ -21,31 +24,31 @@ const Register = () => {
   const onSubmit = (data) => {
     const email = data.email;
     const name = data.name;
-    const PhotoUrl = data.PhotoUrl;
+    const photoUrl = data.photoUrl;
     const password = data.password;
-    if(!/^(?=.*[a-z])(?=.*[A-Z]).{6,}$/.test(password)){
-      setPassError("You have to put uppercase,lowecase & minimum 6 degit")
+    if (!/^(?=.*[a-z])(?=.*[A-Z]).{6,}$/.test(password)) {
+      setPassError("Password must contain at least one uppercase letter, one lowercase letter, and be at least 6 characters long");
       return;
     }
-    setPassError(null)
+    setPassError(null);
     signUpPass(email, password)
       .then((result) => {
         updateProfile(auth.currentUser, {
           displayName: name,
-          photoURL: PhotoUrl,
+          photoURL: photoUrl,
         })
           .then(() => {
             // Profile updated!
-            // ...
           })
           .catch((error) => {
-            // An error occurred
-            console.log();(error.message);
+            console.log(error.message);
           });
-          
+          toast.success("Registration succsessfull")
+          LogOut();
+          navigate('/login')
       })
       .catch((error) => {
-        setError("This email Already used");
+        setError("This email is already in used");
       });
   };
 
@@ -54,7 +57,7 @@ const Register = () => {
   };
 
   return (
-    <div className="max-w-[1440px] w-[90%] mx-auto grid grid-cols-1 md:grid-cols-7 bg-no-repeat bg-cover bg-right p-6 mt-44">
+    <div className="max-w-[1440px] w-[90%] mx-auto grid grid-cols-1 md:grid-cols-7 bg-no-repeat bg-cover bg-right p-6 md:mt-44 mt-24">
       <PageTitle title={"Register"}></PageTitle>
       <div className="col-span-full md:col-span-3 border-r-2 border-dashed">
         <div className="flex flex-col items-center justify-center min-h-[calc(100vh-128px)]">
@@ -80,7 +83,7 @@ const Register = () => {
                     name="photo"
                     placeholder="PhotoUrl"
                     id="PhotoUrl"
-                    {...register("PhotoUrl")}
+                    {...register("photoUrl")}
                     className="transition-transform input-feild block w-full outline-none border-none bg-[#aeaeae5a] py-5 px1 rounded-xl text-[#090909da] placeholder:text-black font-semibold pl-2"
                   />
                 </div>
@@ -94,7 +97,7 @@ const Register = () => {
                     className="transition-transform input-feild block w-full outline-none border-none bg-[#aeaeae5a] py-5 px1 rounded-xl text-[#090909da] placeholder:text-black font-semibold pl-2"
                   />
                   {errors.email && <span>This field is required</span>}
-                  {error && <span className=" text-red-500">{error}</span>}
+                  {error && <span className="text-red-500">{error}</span>}
                 </div>
                 <div className="relative">
                   <input
@@ -103,7 +106,6 @@ const Register = () => {
                     placeholder="Password"
                     {...register("password")} // Registering the input field
                     className="transition-transform input-feild block w-full outline-none border-none bg-[#aeaeae5a] py-5 px1 rounded-xl text-[#090909da] placeholder:text-black font-semibold pl-2"
-                    
                   />
                   {errors.password && <span className="text-red-900">This field is required</span>}
                   {passError && <span className="text-red-500">{passError}</span>}
@@ -126,7 +128,7 @@ const Register = () => {
               <div className="flex gap-3 flex-col items-center justify-center pt-6">
                 <p className="text-xl font-bold">or</p>
                 <input
-                  className="bg-[#2ed573] py-2 rounded-xl w-1/3 text-xl"
+                  className="bg-[#2ed573] py-2 rounded-xl w-1/3 text-xl cursor-pointer"
                   type="submit"
                   value={"Register"}
                 />
@@ -141,36 +143,34 @@ const Register = () => {
           </div>
         </div>
       </div>
-      <div className="flex  flex-col items-center col-span-full md:col-span-3 md:w-[70%] mx-auto">
-      <h2 className=" text-3xl mt-10 py-6">Privicy Policy</h2>
+      <div className="flex flex-col items-center col-span-full md:col-span-3 md:w-[80%] mx-auto">
+        <h2 className=" text-3xl mt-10 py-6">Privacy Policy</h2>
         <ul>
-          
-  <li>
-    <h3 className="text-lg font-semibold mb-2">
-      <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">1.</span> Use of Information:
-    </h3>
-    <p>After registration, clarify how you will use the information collected during the registration process. This may include using the provided contact details to communicate with the user about their account, property listings, or relevant updates.</p>
-  </li>
-  <li>
-    <h3 className="text-lg font-semibold mb-2">
-      <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">2.</span> Data Security:
-    </h3>
-    <p>Reiterate the measures you take to safeguard the personal information provided during registration. Emphasize your commitment to protecting user data from unauthorized access, disclosure, or misuse.</p>
-  </li>
-  <li>
-    <h3 className="text-lg font-semibold mb-2">
-      <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">3.</span> Data Retention:
-    </h3>
-    <p>Explain how long you will retain the information collected during registration. Specify the purposes for which the data will be retained and the criteria used to determine the retention period.</p>
-  </li>
-
-  <li>
-    <h3 className="text-lg font-semibold mb-2">
-      <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">4.</span> Updates to the Privacy Policy:
-    </h3>
-    <p>Notify users that your privacy policy may be updated periodically, and explain how you will communicate changes to registered users. Encourage users to review the policy regularly for any updates or modifications.</p>
-  </li>
-</ul>
+          <li>
+            <h3 className="text-lg font-semibold mb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">1.</span> Use of Information:
+            </h3>
+            <p>After registration, clarify how you will use the information collected during the registration process. This may include using the provided contact details to communicate with the user about their account, property listings, or relevant updates.</p>
+          </li>
+          <li>
+            <h3 className="text-lg font-semibold mb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">2.</span> Data Security:
+            </h3>
+            <p>Reiterate the measures you take to safeguard the personal information provided during registration. Emphasize your commitment to protecting user data from unauthorized access, disclosure, or misuse.</p>
+          </li>
+          <li>
+            <h3 className="text-lg font-semibold mb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">3.</span> Data Retention:
+            </h3>
+            <p>Explain how long you will retain the information collected during registration. Specify the purposes for which the data will be retained and the criteria used to determine the retention period.</p>
+          </li>
+          <li>
+            <h3 className="text-lg font-semibold mb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">4.</span> Updates to the Privacy Policy:
+            </h3>
+            <p>Notify users that your privacy policy may be updated periodically, and explain how you will communicate changes to registered users. Encourage users to review the policy regularly for any updates or modifications.</p>
+          </li>
+        </ul>
       </div>
     </div>
   );

@@ -52,7 +52,7 @@ const Residencies = ({ loadData }) => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="absolute bottom-0 right-0 z-10 flex gap-4 mb-4 md:mb-0 md:-top-20">
+        <div className="absolute -bottom-10 right-0 z-10 flex gap-4 mb-4 md:mb-0 md:-top-20">
           <button className="btn bg-[#27ae60]" onClick={slideToPrev}>
             <GrPrevious size={20} />
           </button>

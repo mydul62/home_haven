@@ -37,7 +37,7 @@ const Banner = () => {
         navigation={true}
         modules={[Autoplay,Pagination, Navigation]}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className="mySwiper"
+        className="mySwiper h-[80vh]"
       >
         <SwiperSlide>
           <img

@@ -24,7 +24,7 @@ const Residencies = ({ loadData }) => {
 
   return (
     <div data-aos="fade-up"
-    data-aos-duration="3000" className="relative max-w-[1440px] mx-auto w-[90%]">
+    data-aos-duration="2500" className="relative max-w-[1440px] mx-auto w-[90%]">
       <div className="swiper-container">
         <Swiper {...sliderSettings} onSwiper={setSwiper}>
           {loadData.map((data) => (

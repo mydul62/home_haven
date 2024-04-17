@@ -11,6 +11,7 @@ import ResidentialTitle from "../../Components/Residencies/ResidentialTitle";
 import Review from "../../Components/Review/Review";
 import ReviewTitle from "../../Components/Review/ReviewTitle";
 import PageTitle from "../../Components/Banner/PageTitle/PageTitle";
+import Company from "../../Components/company/Company";
 
 
 // ..
@@ -30,7 +31,9 @@ const Home = () => {
       </div >
 
       {/* ------------------------------------------------------------------- */}
-
+         <div>
+         <Company></Company>
+         </div>
         <div className="max-w-[1440px] mx-auto">
           <ResidentialTitle></ResidentialTitle>
         <Residencies loadData={loadData}></Residencies>

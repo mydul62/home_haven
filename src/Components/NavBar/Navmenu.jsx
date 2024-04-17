@@ -12,7 +12,7 @@ const Navmenu = () => {
   const handleSignOut = () => {
     LogOut();
   };
- const avatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJKlrocynENzcYD9nHmspjUDPb6-s2bOBpNw3sx631gA&s";
+ const avatar="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o=";
   const navlist = (
     <>
       <li className="hover:text-orange-500 text-xl ">
@@ -80,7 +80,7 @@ const Navmenu = () => {
       </div>
     </nav>
    </div>
-   <div className={`absolute ${showSidebar ? 'top-[70px]' : '-top-80'} ease-in duration-300 z-40 w-full text-center items-center md:hidden flex justify-center bg-[#c8d6e5] opacity-95 font-bold`}>
+   <div className={`absolute ${showSidebar ? 'top-[65px]' : '-top-80'} ease-in duration-300 z-40 w-full text-center items-center md:hidden flex justify-center bg-[#c8d6e5] opacity-95 font-bold`}>
   <ul className='flex flex-col justify-center items-center text-center py-6 gap-6'>
     {navlist}
   </ul>

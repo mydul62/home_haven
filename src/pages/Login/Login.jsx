@@ -39,7 +39,7 @@ const Login = () => {
         }
       })
       .catch((error) => {
-        console.log(error.message);
+        toast.error(error.message.slice(10));
       });
   };
   const handleGoogleLogin = () => {
@@ -51,7 +51,19 @@ const Login = () => {
         }
       })
       .catch((error) => {
-        console.log(error.message);
+        toast.error(error.message.slice(10));
+      });
+  };
+  const handleGithubLogin = () => {
+    githubSignIn()
+      .then((result) => {
+        toast("Sign In sucsessfully");
+        if (result.user) {
+          navigate(form);
+        }
+      })
+      .catch((error) => {
+        toast.error(error.message.slice(10));
       });
   };
 
@@ -61,7 +73,7 @@ const Login = () => {
   };
 
   return (
-    <div className="max-w-[1440px] w-[95%] mx-auto flex flex-col items-center justify-center min-h-[calc(100vh-128px)] mt-24">
+    <div className="max-w-[1440px] w-[95%] mx-auto flex flex-col items-center justify-center min-h-[calc(100vh-128px)] mt-24 md:mt-44">
       <PageTitle title={"Login"}></PageTitle>
       <div className="w-[90%] md:w-4/6 lg:w-2/6 mx-auto bg-[#aeaeae35] py-10 p-6 rounded-xl border-[3px] border-[#82589F]">
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -132,7 +144,7 @@ const Login = () => {
            <p className="mb-3" onClick={handleGoogleLogin}>
               <FcGoogle size={30} />{" "}
             </p> <span className=" text-3xl">/</span>
-            <p className="mb-3" onClick={()=>githubSignIn()}>
+            <p className="mb-3" onClick={handleGithubLogin}>
               <FaGithub size={30} />{" "}
             </p>
            </div>

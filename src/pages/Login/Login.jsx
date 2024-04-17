@@ -8,15 +8,11 @@ import { FcGoogle } from "react-icons/fc";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import * as React from "react";
-import Alert from "@mui/material/Alert";
-import Stack from "@mui/material/Stack";
 import PageTitle from "../../Components/Banner/PageTitle/PageTitle";
 import { FaGithub } from "react-icons/fa";
 
 const Login = () => {
   const [show, setShow] = useState(false);
-  const [succsess, setSuccsess] = useState(false);
   const { signInPass, googleSignIn,githubSignIn } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
@@ -28,13 +24,12 @@ const Login = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    setSuccsess(false)
     const email = data.email;
     const password = data.password;
     signInPass(email, password)
       .then((result) => {
-        setSuccsess(true)
         if (result.user) {
+          toast.success("Sign In sucsessfully");
           navigate(form);
         }
       })
@@ -45,7 +40,7 @@ const Login = () => {
   const handleGoogleLogin = () => {
     googleSignIn()
       .then((result) => {
-        toast("Sign In sucsessfully");
+        toast.success("Sign In sucsessfully");
         if (result.user) {
           navigate(form);
         }
@@ -57,7 +52,7 @@ const Login = () => {
   const handleGithubLogin = () => {
     githubSignIn()
       .then((result) => {
-        toast("Sign In sucsessfully");
+        toast.success("Sign In sucsessfully");
         if (result.user) {
           navigate(form);
         }
@@ -80,17 +75,6 @@ const Login = () => {
           <h2 className="text-[#2ed573] font-plyfair text-center text-3xl md:text-4xl pb-6 font-bold">
             Login Now
           </h2>
-          <div className=" my-4">
-            {
-              succsess && <Stack sx={{ width: "100%" }} spacing={2}>
-              <Alert variant="filled" severity="success">
-                Login Successfull.
-              </Alert>
-            </Stack>
-            }
-          
-          </div>
-
           <div className="flex flex-col gap-8">
             <div>
               <input

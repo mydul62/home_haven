@@ -14,7 +14,7 @@ const Detail = ({ data }) => {
   }
   return (
     <div className="max-w-[1440px] w-[90%] mx-auto">
-      <PageTitle title={"product Details"}></PageTitle>
+      <PageTitle title={`Details${data.id}`}></PageTitle>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="col-span-full  md:col-span-2">
           <div  className='relative p-6 bg-[#eaeaea]'>

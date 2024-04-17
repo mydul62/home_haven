@@ -126,7 +126,6 @@ const Register = () => {
                 </div>
               </div>
               <div className="flex gap-3 flex-col items-center justify-center pt-6">
-                <p className="text-xl font-bold">or</p>
                 <input
                   className="bg-[#2ed573] py-2 rounded-xl w-1/3 text-xl cursor-pointer"
                   type="submit"

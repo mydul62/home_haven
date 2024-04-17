@@ -50,22 +50,19 @@ const Banner = () => {
             data-aos-duration="1500"
              className=" py-4 space-y-2 bg-[#eaeaea9c] rounded-xl">
               <h2 className=" font-cursive text-2xl font-bold">Customer </h2>
-              <h3 className=" font-poppins font-semibold text-xl"><SlotCounter value={500} />k</h3>
+              <h3 className="flex justify-center items-center font-poppins font-semibold text-xl"><SlotCounter value={500} /><span>k</span></h3>
             </div>
-            <div data-aos="zoom-in"
-            data-aos-duration="1500"
-             className=" py-4 space-y-4 bg-[#eaeaea9c]  rounded-xl">
-              <h2 className=" font-cursive text-2xl font-bold">Services</h2>
-              <h3 className=" font-poppins font-semibold text-xl"> 
-              <SlotCounter value={10} />
-             k</h3>
+            <div 
+             className=" py-4 space-y-2 bg-[#eaeaea9c] rounded-xl">
+              <h2 className=" font-cursive text-2xl font-bold">Customer </h2>
+              <h3 className="flex justify-center items-center font-poppins font-semibold text-xl"><SlotCounter value={10} /><span>k</span></h3>
             </div>
             <div 
             data-aos="fade-left"
             data-aos-duration="1500"
              className=" py-4 space-y-4 bg-[#eaeaea9c]  rounded-xl">
               <h2 className=" font-cursive text-2xl font-bold">Happy clint</h2>
-              <h3 className=" font-poppins font-semibold text-xl"><SlotCounter value={95} />%</h3>
+              <h3 className=" flex justify-center items-center font-poppins font-semibold text-xl"><SlotCounter value={95} /><span>%</span></h3>
             </div>
           </div>
         </SwiperSlide>
@@ -76,26 +73,23 @@ const Banner = () => {
           />
          <div className=" grid grid-cols-1 md:grid-cols-3 gap-6 p-4 bg-[#eaeaea73] text-black absolute w-[60%] mx-auto rounded-xl z-30 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
             <div 
-            data-aos="fade-right"
+             data-aos="fade-right"
             data-aos-duration="1500"
-             className=" py-4 space-y-2 bg-[#eaeaea9c]  rounded-xl">
+             className=" py-4 space-y-2 bg-[#eaeaea9c] rounded-xl">
               <h2 className=" font-cursive text-2xl font-bold">Customer </h2>
-              <h3 className=" font-poppins font-semibold text-xl"><SlotCounter value={500} />k</h3>
+              <h3 className="flex justify-center items-center font-poppins font-semibold text-xl"><SlotCounter value={500} /><span>k</span></h3>
             </div>
-            <div data-aos="zoom-in"
-            data-aos-duration="1500"
-             className=" py-4 space-y-4 bg-[#eaeaea9c]  rounded-xl">
-              <h2 className=" font-cursive text-2xl font-bold">Services</h2>
-              <h3 className=" font-poppins font-semibold text-xl"> 
-              <SlotCounter value={10} />
-             k</h3>
+            <div 
+             className=" py-4 space-y-2 bg-[#eaeaea9c] rounded-xl">
+              <h2 className=" font-cursive text-2xl font-bold">Customer </h2>
+              <h3 className="flex justify-center items-center font-poppins font-semibold text-xl"><SlotCounter value={10} /><span>k</span></h3>
             </div>
             <div 
             data-aos="fade-left"
             data-aos-duration="1500"
              className=" py-4 space-y-4 bg-[#eaeaea9c]  rounded-xl">
               <h2 className=" font-cursive text-2xl font-bold">Happy clint</h2>
-              <h3 className=" font-poppins font-semibold text-xl"><SlotCounter value={95} />%</h3>
+              <h3 className=" flex justify-center items-center font-poppins font-semibold text-xl"><SlotCounter value={95} /><span>%</span></h3>
             </div>
           </div>
         </SwiperSlide>
@@ -108,24 +102,21 @@ const Banner = () => {
             <div 
             data-aos="fade-right"
             data-aos-duration="1500"
-             className=" py-4 space-y-2 bg-[#eaeaea9c]  rounded-xl">
+             className=" py-4 space-y-2 bg-[#eaeaea9c] rounded-xl">
               <h2 className=" font-cursive text-2xl font-bold">Customer </h2>
-              <h3 className=" font-poppins font-semibold text-xl"><SlotCounter value={500} />k</h3>
+              <h3 className="flex justify-center items-center font-poppins font-semibold text-xl"><SlotCounter value={500} /><span>k</span></h3>
             </div>
-            <div data-aos="zoom-in"
-            data-aos-duration="1500"
-             className=" py-4 space-y-4 bg-[#eaeaea9c]  rounded-xl">
-              <h2 className=" font-cursive text-2xl font-bold">Services</h2>
-              <h3 className=" font-poppins font-semibold text-xl"> 
-              <SlotCounter value={10} />
-             k</h3>
+            <div 
+             className=" py-4 space-y-2 bg-[#eaeaea9c] rounded-xl">
+              <h2 className=" font-cursive text-2xl font-bold">Customer </h2>
+              <h3 className="flex justify-center items-center font-poppins font-semibold text-xl"><SlotCounter value={10} /><span>k</span></h3>
             </div>
             <div 
             data-aos="fade-left"
             data-aos-duration="1500"
              className=" py-4 space-y-4 bg-[#eaeaea9c]  rounded-xl">
               <h2 className=" font-cursive text-2xl font-bold">Happy clint</h2>
-              <h3 className=" font-poppins font-semibold text-xl"><SlotCounter value={95} />%</h3>
+              <h3 className=" flex justify-center items-center font-poppins font-semibold text-xl"><SlotCounter value={95} /><span>%</span></h3>
             </div>
           </div>
         </SwiperSlide>

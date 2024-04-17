@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
    <div className="bg-base-300 mt-24">
+    <div className=" w-[80%] mx-auto flex flex-col justify-center items-center  pt-16 pb-4 text-center ">
+      <h2 className=" text-3xl">Home <span className=" text-orange-400">Haven</span></h2>
+      <p className=" inline-block border-b border-[#0000006b] pb-4">Explore Our website and Enjoy your best best and comfortable living.</p>
+    </div>
      <footer className="footer grid justify-center grid-cols-2 lg:grid-cols-3 max-w-[1440px] w-[90%] mx-auto  p-10 text-base-content">
   <nav className="">
     <h6 className="footer-title">Services</h6> 

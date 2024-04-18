@@ -4,15 +4,13 @@ URL  :   https://homehaven-auth.web.app/
 HomeHaven is a residential website that offers various features and services for users interested in finding or listing properties.
 # Features:
 
-   - # User Registration and Authentication:
-        Users can register on the website using email and password.
-        Alternatively, users can log in using their email and password, or through Google or GitHub authentication.
-
-   - # User Registration and Authentication:
-  - ## User Profile Management:
+   - ## User Registration and Authentication:
+        + Users can register on the website using email and password.
+        + Alternatively, users can log in using their email and password, or through Google or GitHub authentication.
+   - ## User Profile Management:
         Logged-in users have access to their private profile page where they can update their profile information, including name and photo.
 
-    - ## Residential Services Showcase:
+   - ## Residential Services Showcase:
        The website showcases beautiful residential services with detailed descriptions and images.
 
    - ## Property Listings:

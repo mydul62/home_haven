@@ -46,3 +46,9 @@
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
 }
+.swiper-button-prev{
+  display: none !important;;
+}
+.swiper-button-next{
+  display: none !important;;
+}

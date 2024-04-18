@@ -26,5 +26,6 @@ HomeHaven is a residential website that offers various features and services for
    3. react-hook-form: Provides a simple and efficient way to manage forms in React.
    4. firebase: Used for backend services such as authentication, database, and hosting.
    5. react-icons: Provides a comprehensive library of icons for use in React applications.
+   6. react-router-dom:use to routing maltiple pages.
 
 This website is built to provide users with a seamless experience in exploring residential services and properties. Whether users are looking to find their dream home or list their property for rent or sale, HomeHaven offers a user-friendly platform to meet their needs.
